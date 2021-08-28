@@ -1,0 +1,48 @@
+@import "../Shared/Shared.module.scss";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $navbarGray;
+  padding: 18px 32px;
+  display: flex;
+  z-index: 5;
+}
+
+.navbarBrand {
+  font-size: 20px;
+  font-family: "Inter Extra Bold";
+  letter-spacing: 0.6px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbarItems {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 40px;
+  margin-top: 2.5px;
+  height: 0;
+  width: 100%;
+  padding-right: 45px;
+}
+
+.navbarItemsShow {
+  visibility: visible;
+  height: initial;
+  display: initial;
+  margin-top: 70px;
+  margin-left: -57px;
+}
+
+.navbarItem {
+  margin-bottom: 11px;
+  margin-right: 16px;
+}
+
+.navbarItemText {
+  color: $gray;
+  cursor: pointer;
+}
