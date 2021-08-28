@@ -20,6 +20,7 @@ import TextField from "../Shared/TextField";
 import { FieldNames, ResourcePaths } from "../../constants/common";
 import SelectedImages from "../Shared/SelectedImages";
 import ImageInput from "../Shared/ImageInput";
+import { toastVar } from "../../apollo/client/localState";
 
 interface FormValues {
   body: string;
@@ -106,7 +107,10 @@ const CommentsForm = ({
             setComments([...comments, data.createComment.comment]);
         }
       } catch (err) {
-        alert(err);
+        toastVar({
+          title: err.toString(),
+          status: Common.ToastStatus.Error,
+        });
       }
     }
   };
