@@ -199,7 +199,7 @@ const muiTheme = createTheme({
         marginTop: 100,
         marginBottom: 200,
         [globalTheme.breakpoints.up(DESKTOP_BREAKPOINT)]: {
-          marginTop: 75,
+          marginTop: 135,
         },
       },
     },

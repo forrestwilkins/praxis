@@ -15,11 +15,11 @@ import {
 } from "@material-ui/core";
 import {
   Link as LinkIcon,
+  SupervisedUserCircle,
   AccountBox,
-  SupervisorAccount,
-  Close,
   ExitToApp,
   PersonAdd,
+  Close,
 } from "@material-ui/icons";
 
 import { navKeyVar, navOpenVar } from "../../apollo/client/localState";
@@ -113,7 +113,7 @@ const NavDrawer = () => {
             <a>
               <ListItem button>
                 <ListItemIcon>
-                  <SupervisorAccount color="primary" />
+                  <SupervisedUserCircle color="primary" />
                 </ListItemIcon>
                 <ListItemText primary={Messages.navigation.users()} />
               </ListItem>
